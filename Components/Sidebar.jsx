@@ -15,22 +15,22 @@ const Sidebar = ({children}) => {
                 </Link>
                 <span className='border-b-[2px] border-gray-200 p-2 w-full '></span>
                 <Link href='/'>
-                <div className='bg-gray-200 hover:bg-gray-300 my-3 cursor-pointer p-3 rounded-lg inline-block'>
+                <div className='bg-gray-200 hover:bg-gray-300 hover:text-purple-800 my-3 cursor-pointer p-3 rounded-lg inline-block'>
                 <RxDashboard size={20} />
              </div>
                 </Link>
-                <Link href='/'>
-                <div className='bg-gray-200 hover:bg-gray-300 my-3 cursor-pointer p-3 rounded-lg inline-block'>
+                <Link href='/Customers'>
+                <div className='bg-gray-200 hover:bg-gray-300 hover:text-purple-800 my-3 cursor-pointer p-3 rounded-lg inline-block'>
                 <RxPerson size={20} />
              </div>
                 </Link>
                 <Link href='/'>
-                <div className='bg-gray-200 hover:bg-gray-300 my-3 cursor-pointer p-3 rounded-lg inline-block'>
+                <div className='bg-gray-200 hover:bg-gray-300 hover:text-purple-800 my-3 cursor-pointer p-3 rounded-lg inline-block'>
                 <HiOutlineShoppingBag size={20} />
              </div>
                 </Link>
                 <Link href='/'>
-                <div className='bg-gray-200 hover:bg-gray-300 my-3 cursor-pointer p-3 rounded-lg inline-block'>
+                <div className='bg-gray-200 hover:bg-gray-300 hover:text-purple-800 my-3 cursor-pointer p-3 rounded-lg inline-block'>
                 <FiSettings size={20} />
              </div>
                 </Link>

@@ -1,23 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import {
-    Chart as ChartJS,
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+  import { Line } from 'react-chartjs-2';
+
+  ChartJS.register(
     CategoryScale,
     LinearScale,
-    BarElement,
+    PointElement,
+    LineElement,
     Title,
     Tooltip,
-    Legend,
-  } from 'chart.js';
-  import { Bar } from 'react-chartjs-2';
-
-ChartJS.register(
-    Legend,
-    Title,
-    Tooltip,
-    BarElement,
-    LinearScale,
-    CategoryScale
-);
+    Legend
+  );
 
 const Barchart = () => {
   const [chartData,setChartData]=useState({
@@ -31,8 +33,8 @@ const Barchart = () => {
             {
                 label:'Sales $',
                 data:[3433,2321,2223,1211,4354,2131,4454],
-                borderColor:'',
-                backgroundColor:'#273c75'
+                borderColor:'rgb(255, 99, 132)',
+                backgroundColor:'rgba(255, 99, 132, 0.5)'
             }
         ]
     })
@@ -47,7 +49,7 @@ const Barchart = () => {
     return (
         <>
         <div className='bg-white  relative p-4 w-full lg:h-[70vh] h-[50vh] md:col-span-2 m-auto rounded-lg border shadow-lg'>
-            <Bar data={chartData} options={chartOptions} />
+            <Line data={chartData} options={chartOptions} />
         </div>
         </>
     )
