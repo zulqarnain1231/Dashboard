@@ -4,7 +4,7 @@ import { data } from '@/data/data';
 
 const Recentorders = () => {
   return (
-    <div className='col-span-1 w-full shadow-lg flex flex-col lg:h-[70vh] h-[50vh] p-4 m-auto relative bg-white border overflow-scroll'>
+    <div className='col-span-1 w-full shadow-lg flex flex-col lg:h-[70vh] h-[50vh] p-4 m-auto relative bg-white border rounded-lg overflow-scroll'>
         <h1>Recent orders</h1>
         <ul>
             {
@@ -16,7 +16,7 @@ const Recentorders = () => {
                          <span className='bg-gray-200 cursor-pointer px-2 text-center  py-3 rounded-lg text-purple-600'><FaShoppingBag /></span>
                         <div>
                         <h1 className='font-bold'>$ {item.total}</h1>
-                         <p className='text-gray-400'>{item.name.first}</p>
+                         <p className='text-gray-400 md:hidden lg:flex'>{item.name.first}</p>
                         </div>
                          
                          </div>
