@@ -46,7 +46,7 @@ const Barchart = () => {
   },[])
     return (
         <>
-        <div className='bg-white relative p-4 w-full lg:h-[70vh] h-[50vh] md:col-span-2 m-auto rounded-lg border shadow-lg'>
+        <div className='bg-white  relative p-4 w-full lg:h-[70vh] h-[50vh] md:col-span-2 m-auto rounded-lg border shadow-lg'>
             <Bar data={chartData} options={chartOptions} />
         </div>
         </>
