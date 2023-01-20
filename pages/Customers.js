@@ -9,12 +9,12 @@ const Customers = () => {
         <h1>Welcome Back! Client</h1>
       </div>
       <div className="m-2 bg-white rounded-lg border shadow-lg p-4">
-        <div className="flex  justify-between p-2 my-2">
+        <div className="grid md:grid-cols-4 grid-cols-2 justify-between p-2 my-2">
           <h1>Name</h1>
-          <h1>Email</h1>
-          <h1>Last Order</h1>
-          <h1>Method</h1>
-          <h1></h1>
+          <h1 className="text-right md:text-left">Email</h1>
+          <h1 className="hidden md:grid">Last Order</h1>
+          <h1 className="hidden md:grid">Method</h1>
+          
         </div>
         <div>
 
@@ -23,7 +23,7 @@ const Customers = () => {
   data.map((item)=>{
       return (
           <div key={item.id}>
-          <Customer name={item.name.first} lastorder={item.date} method={item.method}/>
+          <Customer name={item.name.first} email={item.name.last} lastorder={item.date} method={item.method}/>
           </div>
       )
   })
