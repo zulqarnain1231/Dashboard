@@ -34,7 +34,7 @@ const Barchart = () => {
                 label:'Sales $',
                 data:[3433,2321,2223,1211,4354,2131,4454],
                 borderColor:'rgb(255, 99, 132)',
-                backgroundColor:'rgba(255, 99, 132, 0.5)'
+                backgroundColor:'#E63673'
             }
         ]
     })

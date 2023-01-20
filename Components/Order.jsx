@@ -6,7 +6,7 @@ const Order = ({name,method,status,order,lastorder}) => {
     <div className='bg-gray-300 grid md:grid-cols-4 grid-cols-2 rounded-lg hover:shadow-lg justify-between p-3 my-3'>
     <div className='flex gap-1 text-center'>
          <span className='bg-gray-100 hover:bg-gray-200 text-purple-800  cursor-pointer px-2 pt-3 rounded-lg inline-block'>
-            <FaShoppingBag size={15} />
+            <FaShoppingBag size={20} />
          </span>
          <div className='text-center gap-1 pl-4'>
             <h1 className='text-lg font-bold'>${order.toLocaleString()}</h1>
