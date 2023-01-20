@@ -4,7 +4,7 @@ import { data } from '@/data/data';
 
 const Recentorders = () => {
   return (
-    <div className='col-span-1 w-full shadow-lg flex flex-col lg:h-[70vh] h-[50vh] p-4 m-auto relative bg-white border rounded-lg overflow-scroll'>
+    <div className='col-span-1 w-full shadow-lg flex flex-col lg:h-[70vh] h-[50vh] p-4 m-auto relative bg-white border rounded-lg scrollbar-hide overflow-scroll'>
         <h1>Recent orders</h1>
         <ul>
             {

@@ -1,10 +1,11 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-import Header from '@/Components/Header'
-import Topcards from '@/Components/Topcards'
-import Barchart from '@/Components/Barchart'
-import Recentorders from '@/Components/Recentorders'
-import DoghnutChart from '@/Components/DoghnutChart'
+import Header from "@/Components/Header";
+import Topcards from "@/Components/Topcards";
+import Barchart from "@/Components/Barchart";
+import Recentorders from "@/Components/Recentorders";
+import DoghnutChart from "@/Components/DoghnutChart";
+import Sharethoughtsform from "@/Components/Sharethoughtsform";
 export default function Home() {
   return (
     <>
@@ -14,19 +15,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-gray-50 min-h-screen'>
+      <main className="bg-gray-50 min-h-screen">
         <Header />
         <Topcards />
-        <div className=' p-4 gap-4 lg:gap-5 grid grid-cols-1 md:grid-cols-3 '>
+        <div className=" p-4 gap-4 lg:gap-5 grid grid-cols-1 md:grid-cols-3 ">
           <Barchart />
           <Recentorders />
         </div>
-        <div className=' p-4 gap-4 lg:gap-5 grid grid-cols-1 md:grid-cols-3 md:h-[70vh] h-[50vh] '>
-      
+        <div className=" p-4 gap-4 lg:gap-7 grid grid-cols-1 md:grid-cols-3 md:h-[70vh] h-[50vh] ">
           <DoghnutChart />
-          
+          <Sharethoughtsform />
         </div>
       </main>
     </>
-  )
+  );
 }

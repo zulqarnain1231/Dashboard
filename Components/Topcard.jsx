@@ -6,11 +6,11 @@ const Topcard = ({title,price,percent,span,icon}) => {
 <div className='flex justify-between'>
 
 <div>
-<span className={title == 'Daily Revenue'? 'bg-[#3298EE] inline-block p-3 md:-translate-y-7 rounded-xl  w-16 h-16 shadow-xl text-white':title == 'YTD Revenue'? 'bg-[#5BB25F] inline-block p-3 md:-translate-y-7 rounded-xl  w-16 h-16 shadow-xl text-white':'bg-[#E63572] inline-block p-3 md:-translate-y-7 rounded-xl  w-16 h-16 shadow-xl text-white'}>{icon}</span>
+<span className={title == 'Daily Revenue'? 'bg-[#3298EE]  cursor-pointer inline-block p-3 md:-translate-y-7 rounded-xl  w-16 h-16 shadow-xl text-white':title == 'YTD Revenue'? 'bg-[#5BB25F]  cursor-pointer inline-block p-3 md:-translate-y-7 rounded-xl  w-16 h-16 shadow-xl text-white':'bg-[#E63572]  cursor-pointer inline-block p-3 md:-translate-y-7 rounded-xl  w-16 h-16 shadow-xl text-white'}>{icon}</span>
    
 </div>
 <div>
-<h1 className='text-2xl font-bold'>${price}</h1>
+<h1 className='text-2xl font-bold text-center'>{title=='New Customers'? price : '$'+ price}</h1>
     <p className='text-gray-500'>{title}</p>
 </div>
 
