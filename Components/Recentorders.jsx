@@ -20,7 +20,7 @@ const Recentorders = () => {
                         </div>
                          
                          </div>
-                         <span>{item.date}</span>
+                         <span className=' md:hidden lg:flex'>{item.date}</span>
                         </div>
                     </li>
                 })
