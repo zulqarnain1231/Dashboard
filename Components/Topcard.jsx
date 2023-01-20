@@ -6,7 +6,7 @@ const Topcard = ({title,price,percent,span,icon}) => {
 <div className='flex justify-between'>
 
 <div>
-<span className='bg-[#3298EE] inline-block p-3 md:-translate-y-7 rounded-lg  w-20 h-20 shadow-xl text-white'>{icon}</span>
+<span className={title == 'Daily Revenue'? 'bg-[#3298EE] inline-block p-3 md:-translate-y-7 rounded-xl  w-16 h-16 shadow-xl text-white':title == 'YTD Revenue'? 'bg-[#5BB25F] inline-block p-3 md:-translate-y-7 rounded-xl  w-16 h-16 shadow-xl text-white':'bg-[#E63572] inline-block p-3 md:-translate-y-7 rounded-xl  w-16 h-16 shadow-xl text-white'}>{icon}</span>
    
 </div>
 <div>
