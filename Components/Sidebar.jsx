@@ -3,6 +3,8 @@ import React from 'react'
 import {RxDashboard, RxPerson, RxSketchLogo} from 'react-icons/rx'
 import {HiOutlineShoppingBag} from 'react-icons/hi'
 import {FiSettings} from 'react-icons/fi'
+import {MdNotifications} from 'react-icons/md'
+import {IoMdContact} from 'react-icons/io'
 const Sidebar = ({children}) => {
   return (
     <div className='flex'>
@@ -40,7 +42,26 @@ const Sidebar = ({children}) => {
             </div>
         </div>
 
-        <main className='w-full ml-20'>{children}</main>
+        <main className='w-full ml-20'>
+         <div className='pb-4 w-full flex flex-row-reverse md:gap-4 sm:gap-2 px-4 pt-3 text-right  bg-gray-50'>
+            
+            
+
+            <span className='hover:bg-gray-200 gap-1 text-gray-500 rounded-lg p-2 cursor-pointer hover:text-gray-700 '>
+                  <MdNotifications size={25}/>
+                 
+                  </span>
+                  <span className='hover:bg-gray-200 text-center flex gap-1 text-gray-500 rounded-lg p-2 cursor-pointer hover:text-gray-700 '>
+                  <IoMdContact size={25}/>
+                 <p>Profile</p>
+                  </span>
+           
+           <input className='p-2 rounded-lg border-2 hidden md:flex' placeholder='Typre Here' type="text" />
+              
+                  
+
+         </div>
+         {children}</main>
     </div>
   )
 }
