@@ -110,3 +110,31 @@ export const data = [
       date: '1 Day ago',
     },
   ];
+
+  export const MessegesData =[
+{
+  Name:'Jack',
+  image:'../public/jack.jpg',
+  messege:'Hi i need more information...',
+},
+{
+  Name:'Michal',
+  image:'../public/michal.jpg',
+  messege:'Awesome Work can you...',
+},
+{
+  Name:'Jimmy',
+  image:'../public/jimmy.jpg',
+  messege:'Have a great afternoon...',
+},
+{
+  Name:'Haris',
+  image:'../public/jhonson.jpg',
+  messege:'Waiting for your...',
+},
+{
+  Name:'Abraham',
+  image:'../public/abraham.jpg',
+  messege:'Help me out in this...',
+},
+  ];

@@ -54,10 +54,11 @@ const Sidebar = ({ children }) => {
                   <MdNotifications size={25} />
 
                </span>
+               <Link href='/Profile'>
                <span className='hover:bg-gray-200 text-center flex gap-1 text-gray-500 rounded-lg p-2 cursor-pointer hover:text-purple-700 '>
                   <IoMdContact size={25} />
                   <p>Profile</p>
-               </span>
+               </span></Link>
 
                <input className='p-2 rounded-lg border-2 hidden md:flex focus:ring-1 focus:outline-none  focus:ring-purple-500 focus:border-purple-500' placeholder='Typre Here' type="text" />
                {
@@ -74,14 +75,9 @@ const Sidebar = ({ children }) => {
 <div className='w-full flex p-2 justify-between gap-2 rounded-lg cursor-pointer hover:bg-gray-200 '>
 <p> Payment Successfully Completed</p> 
 <p className='text-sm text-gray-400 pt-1'>1 day ago</p>
-</div>
-                       
-                  </div> : ''
-               }
-
-
-            </div>
-            {children}</main>
+</div> </div> : '' }</div>
+            {children}
+            </main>
       </div>
    )
 }
