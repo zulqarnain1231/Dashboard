@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import React, { useState } from 'react'
 import { RxDashboard, RxPerson, RxSketchLogo } from 'react-icons/rx'
 import { HiOutlineShoppingBag } from 'react-icons/hi'
 import { FiSettings } from 'react-icons/fi'
 import { MdNotifications } from 'react-icons/md'
 import { IoMdContact } from 'react-icons/io'
+import picture from '../public/abraham.jpg'
 const Sidebar = ({ children }) => {
    const [isToggle, setIsToggle] = useState(false)
    const handleClick = () => {
@@ -55,10 +57,10 @@ const Sidebar = ({ children }) => {
 
                </span>
                <Link href='/Profile'>
-               <span className='hover:bg-gray-200 text-center flex gap-1 text-gray-500 rounded-lg p-2 cursor-pointer hover:text-purple-700 '>
-                  <IoMdContact size={25} />
-                  <p>Profile</p>
-               </span></Link>
+               <div className="avatar online">
+  <div className="w-10 h-10 mt-1 rounded-full relative">
+  <Image className='cursor-pointer  object-cover shadow-2xl  h-full w-full' src={picture} alt='avatar' height='100px' width='100px' /><Image className='rounded-lg cursor-pointer  object-cover shadow-2xl  h-16 w-16' src={require('../public/abraham.jpg')} alt='avatar' height='100px' width='100px' />
+  </div> </div></Link>
 
                <input className='p-2 rounded-lg border-2 hidden md:flex focus:ring-1 focus:outline-none  focus:ring-purple-500 focus:border-purple-500' placeholder='Typre Here' type="text" />
                {

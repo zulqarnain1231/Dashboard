@@ -9,9 +9,12 @@ const Main = () => {
             <div className='flex justify-between p-2 w-full'>
                 <div className='relative flex justify-between gap-2 '>
 
-                    <div className='mt-1'> <Image className='rounded-lg cursor-pointer  object-cover shadow-2xl  h-16 w-16' src={require('../../public/abraham.jpg')} alt='avatar' height='100px' width='100px' />
-                        <h1 className='font-bold'>Abraham Jhons</h1>
+                    <div className='mt-1 flex gap-2'> <Image className='rounded-lg cursor-pointer  object-cover shadow-2xl  h-16 w-16' src={require('../../public/abraham.jpg')} alt='avatar' height='100px' width='100px' />
+                        <div>
+                        <h1 className='font-bold my-1'>Abraham Jhons</h1>
                         <h1 className='text-sm text-gray-400'> CEO / Co-Founder</h1>
+                        </div>
+                       
                     </div>
                 </div>
                 <span className='cursor-pointer mt-2 p-2 h-10 bg-gray-200 rounded-lg hover:bg-purple-800 hover:ease-in duration-200 hover:text-white'><BsThreeDotsVertical size={20} /></span>
