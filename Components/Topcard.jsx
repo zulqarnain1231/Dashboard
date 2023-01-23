@@ -2,7 +2,7 @@ import React from 'react'
 
 const Topcard = ({title,price,percent,span,icon}) => {
   return (
-    <div className={`flex flex-col border p-4 rounded-lg md:col-span-${span}    bg-white w-full shadow-lg`}>
+    <div className={`flex flex-col border p-4 rounded-lg md:col-span-${span}    bg-white w-full shadow-xl`}>
 <div className='flex justify-between'>
 
 <div>
