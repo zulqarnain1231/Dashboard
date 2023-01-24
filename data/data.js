@@ -114,7 +114,7 @@ export const data = [
   export const MessegesData =[
 {
   Name:'Jack',
-  image:'/../public/jack.jpg',
+  image:'../public/jack.jpg',
   messege:'Hi i need more information...',
 },
 {

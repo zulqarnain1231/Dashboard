@@ -3,6 +3,7 @@ import React from 'react';
 import { MessegesData } from '@/data/data';
 import { BsThreeDotsVertical, BsFacebook, BsTwitter, BsInstagram } from 'react-icons/bs';
 import Messege from './Messege';
+import Projects from './Projects';
 const Main = () => {
     return (
         <div className='bg-white p-2 mx-4 shadow-xl rounded-xl -translate-y-10'>
@@ -20,7 +21,7 @@ const Main = () => {
                 <span className='cursor-pointer mt-2 p-2 h-10 bg-gray-200 rounded-lg hover:bg-purple-800 hover:ease-in duration-200 hover:text-white'><BsThreeDotsVertical size={20} /></span>
             </div>
 
-            <div className='my-4 p-2   grid w-full grid-cols-1 lg:grid-cols-3'>
+            <div className='my-4 py-2 px-5   grid w-full grid-cols-1 lg:grid-cols-3'>
 
                 {/* First div */}
 
@@ -114,6 +115,12 @@ const Main = () => {
 
                 </div>
             </div>
+            <div className='my-4  py-2 px-5'>
+                <h1 className='font-bold my-2'>Projects</h1>
+                <p className='text-sm text-gray-500 '>Architect design houses</p>
+            <Projects />
+            </div>
+           
         </div>
     )
 }
