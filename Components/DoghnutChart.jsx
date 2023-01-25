@@ -37,7 +37,7 @@ const DoghnutChart = () => {
         ],
     };
     return (
-        <div className='bg-white  scrollbar-hide p-6  w-full  h-[50vh] col-span-1  rounded-lg border overflow-auto shadow-lg '>
+        <div className='bg-white  scrollbar-hide p-6  w-full  h-full col-span-1  rounded-lg border overflow-auto shadow-lg '>
 
             <Doughnut data={data} options={chartOptions} />
             {/* <h1 className='text-center pb-2 text-xl'>Number OF Visiters Last Week</h1> */}
