@@ -4,7 +4,7 @@ const Messege = ({name,messege,pic}) => {
   return (
     <div className='my-3 flex justify-between gap-1 md:gap-3 relative'>
         <div className='relative flex gap-2'>
-        <Image className='rounded-lg cursor-pointer  object-cover shadow-xl  h-12 w-12' src={require('../../public/jack.jpg')} alt='avatar' height='100px' width='100px' />
+        <Image className='rounded-lg cursor-pointer  object-cover shadow-xl  h-12 w-12' src={pic} alt='avatar' height='500' width='500' />
         <div className='flex flex-col gap-1'>
         <h1 className='font-bold text-sm'>{name}</h1>
         <p className='break-word text-sm text-gray-500 '>{messege}</p>
