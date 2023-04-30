@@ -6,7 +6,7 @@ import Messege from './Messege';
 import Projects from './Projects';
 const Main = () => {
     return (
-        <div className='bg-white p-2 mx-4 shadow-xl rounded-xl -translate-y-10'>
+        <div className='flex flex-col gap-4 bg-white p-2 mx-4 shadow-xl rounded-xl -translate-y-10'>
             <div className='flex justify-between p-2 w-full'>
                 <div className='relative flex justify-between gap-2 '>
 
@@ -102,7 +102,7 @@ const Main = () => {
 
                 <div className='col-span-1 my-3 lg:my-0'>
                     <h1 className='font-bold mb-2'>Platform Messeges</h1>
-                    <div className='flex flex-col '>
+                    <div className='flex flex-col gap-6 '>
                         {
                             MessegesData.map((item) => {
                                 return (
@@ -115,7 +115,7 @@ const Main = () => {
 
                 </div>
             </div>
-            <div className='my-4  py-2 px-5'>
+            <div className='px-5'>
                 <h1 className='font-bold my-2'>Projects</h1>
                 <p className='text-sm text-gray-500 '>Architect design houses</p>
             <Projects />

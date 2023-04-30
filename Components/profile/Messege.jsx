@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const Messege = ({name,messege,pic}) => {
   return (
-    <div className='my-3 flex justify-between gap-1 md:gap-3 relative'>
+    <div className='flex justify-between items-center gap-1 md:gap-3 relative'>
         <div className='relative flex gap-2'>
         <Image className='rounded-lg cursor-pointer  object-cover shadow-xl  h-12 w-12' src={pic} alt='avatar' height='500' width='500' />
         <div className='flex flex-col gap-1'>
