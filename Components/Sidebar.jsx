@@ -21,7 +21,7 @@ const Sidebar = ({ children }) => {
 
    }
    return (
-      <div className='flex'>
+      <div className='grid sm:grid-cols-[80px,calc(100%-80px)]'>
          <Drawer
             open={isDrawer}
             onClose={handleDrawer}
@@ -57,7 +57,7 @@ const Sidebar = ({ children }) => {
                </Link>
             </div>
          </Drawer>
-         <div className=' hidden sm:flex p-4 h-screen bg-white justify-between flex-col fixed w-20 border-r-[1px]'>
+         <div className=' hidden sm:inline-block p-4 h-screen bg-white justify-between flex-col fixed w-20 border-r-[1px]'>
             <div className='flex flex-col items-center'>
                <Link href='/'>
                   <div className='bg-purple-800 text-white p-3 rounded-lg inline-block'>
@@ -91,13 +91,13 @@ const Sidebar = ({ children }) => {
             </div>
          </div>
 
-         <main className='w-full sm:ml-20'>
-            <div className='pb-4 w-full relative flex justify-between sm:flex-row-reverse md:gap-4 sm:gap-2 px-6 sm:px-4 pt-3 text-right  bg-gray-50'>
+         <main className='w-full'>
+            <div className='pb-4 w-full relative flex items-center justify-between sm:flex-row-reverse md:gap-4 sm:gap-2 px-6 sm:px-4 pt-3 text-right  bg-gray-50'>
                <span onClick={handleDrawer} className='cursor-pointer hover:text-purple-700 flex sm:hidden justify-center text-center pt-2 '>
                   <RxHamburgerMenu size={25} />
                </span>
 
-               <div className='flex gap-3'>
+               <div className='flex items-center gap-3'>
                   <span onClick={handleClick} className='hover:bg-gray-200 gap-1 text-gray-500 rounded-lg p-2 cursor-pointer hover:text-purple-700 '>
                      <MdNotifications size={25} />
 
