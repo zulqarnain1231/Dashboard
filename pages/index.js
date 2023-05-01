@@ -28,8 +28,11 @@ export default function Home() {
           <Storage />
           <EmailSubscribers />
         </div>
-        <div className=" p-4 gap-4 lg:gap-7 grid grid-cols-1 md:grid-cols-3 h-auto ">
-          <DoghnutChart />
+        <div className="flex md:flex-row flex-col  p-4 gap-4 lg:gap-7  ">
+          <div className="h-[270px]">
+            <DoghnutChart />
+          </div>
+
           <Sharethoughtsform />
         </div>
       </main>
